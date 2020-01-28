@@ -1,0 +1,297 @@
+html {
+    
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    background-color: ivory;
+}
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+    padding: 0em 2em;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    
+}  
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px;
+    
+    
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header {
+    height: 350px;
+    flex-flow: column;
+    
+}
+
+header h1 {
+    font-family: 'Ultra', serif;
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: midnightblue;
+}
+
+.name-div {
+    width: 90%;
+    height: 30%;
+    border: 1px solid orangered;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    background-color: mistyrose;
+    
+}
+.why-div {
+    width: 90%;
+    height: 60px;
+    border-bottom: 1px solid silver;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+
+}
+.why-div h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    font-family: 'Quando', serif;
+    text-align: center;
+    font-size: .9em;
+    color: crimson; 
+   
+}
+
+.career-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.career-items ul {
+    list-style: none;
+    color: tomato;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quando', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: midnightblue; 
+}
+
+.reasons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    background-color: ivory;   
+    margin-top: 80px; 
+    margin-bottom: 30px;
+}
+
+.reasons p {
+    font-size: 1em;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: justify;
+    padding: 10px;
+    color: slategray;
+   
+}
+
+.third-width-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 400px; 
+    
+ 
+}
+
+.div-1,
+.div-2,
+.div-3 {
+    display: flex;
+    align-items: center;
+    float: left;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: ivory;
+    height: 100px;
+   
+}
+
+#flex-div p {
+    
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    display: flex;
+    color: slategray;
+    
+}
+/*
+hr {
+    height: 200px;
+    transform: rotate(90deg);
+    border-color: purple;   
+    border-width: .5px;
+    
+}*/
+
+footer {
+    height: 100px;
+    background-color: indianred;
+}
+
+footer i {
+    padding: 30px 20px 0 0;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    color: tomato;
+}
+
+.fa-facebook {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-pinterest {
+    color: white;
+}
+
+/*------------- @media queries ------------*/
+
+/* ================================= 
+                 TABLET
+   =================================*/
+
+@media (min-width: 768px) {
+
+html {
+    background-color: ivory;
+  
+}
+.div-1,
+.div-2,
+.div-3 {
+    width: 33.334%
+}
+
+hr {
+    height: 200px;
+    transform: rotate(180deg);
+    border-color: purple;   
+    border-width: .5px;
+  }
+
+  #flex-div p {
+    padding: 20px;
+    
+  }
+}
+
+/* ================================= 
+                 DESKTOP
+   =================================*/
+      
+   @media (min-width: 1200px) {
+
+    html {
+        background-color: mistyrose;      
+    }
+    
+    .name-div {
+        background-color: mistyrose;
+    }
+    header {
+        height: 300px;
+    }
+    header h1 {
+        color: midnightblue;
+    }
+    .third-width-container {
+        background-color: ivory;
+        margin-bottom: 20px;
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+        
+    }
+    .career-items {
+        width: 50%;
+        text-align: justify;
+        height: 40px;
+        flex-direction: row wrap;
+    }
+    .career-items ul {
+        flex-direction: row wrap;
+        width: 100%;
+        height: 40px;
+    }
+    .reasons {
+        background-color: mistyrose;
+        width: 90%;
+    }
+
+    #flex-div p {
+        padding: 30px;
+    }
+   
+    body {
+        font-size: 1.4em;
+    }
+}
